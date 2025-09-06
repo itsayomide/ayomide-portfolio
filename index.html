@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ayomide Adedeji • Portfolio</title>
+  <meta name="description" content="Ayomide Adedeji's portfolio: projects, experience, and contact." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b0c10;
+      --card: #111217;
+      --muted: #a8b3cf;
+      --text: #e5e7eb;
+      --accent: #6ee7b7;
+      --accent-2: #60a5fa;
+      --border: #1f2430;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #ffffff;
+        --card: #f8fafc;
+        --muted: #4b5563;
+        --text: #0f172a;
+        --accent: #06b6d4;
+        --accent-2: #2563eb;
+        --border: #e5e7eb;
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body { margin:0; padding:0; background:var(--bg); color:var(--text); font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+    a { color: var(--accent-2); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { max-width: 980px; margin: 0 auto; padding: 24px; }
+    header { position: sticky; top:0; backdrop-filter: blur(8px); background: rgba(0,0,0,0.2); border-bottom:1px solid var(--border); z-index: 10; }
+    nav { display:flex; gap:16px; align-items:center; justify-content:space-between; padding: 12px 0; }
+    nav .links a { padding:8px 12px; border-radius:10px; }
+    nav .links a:hover { background:var(--card); text-decoration:none; }
+    .hero { display:grid; grid-template-columns: 1.2fr 1fr; gap: 24px; padding: 48px 0 24px; }
+    .card { background: var(--card); border:1px solid var(--border); border-radius:16px; padding:20px; }
+    h1 { font-size: clamp(28px, 4vw, 44px); line-height:1.1; margin:0 0 8px; }
+    h2 { font-size: clamp(20px, 3vw, 28px); margin:0 0 12px; }
+    h3 { margin: 0 0 8px; }
+    .muted { color: var(--muted); }
+    .badges { display:flex; flex-wrap:wrap; gap:8px; margin-top: 8px; }
+    .badge { border:1px solid var(--border); background: rgba(255,255,255,0.04); padding:6px 10px; border-radius:999px; font-size: 12px; }
+    .section { margin: 28px 0; }
+    .list { display: grid; gap: 12px; }
+    .item { padding:14px; border:1px solid var(--border); border-radius: 14px; background: linear-gradient(180deg, rgba(255,255,255,0.03), transparent); }
+    .item h3 { margin-bottom: 4px; }
+    .row { display:flex; flex-wrap: wrap; gap:10px; align-items:center; justify-content:space-between; }
+    .pill { font-size: 12px; border:1px solid var(--border); padding:4px 8px; border-radius: 999px; color:var(--muted); }
+    footer { border-top:1px solid var(--border); margin-top: 32px; padding: 24px 0; text-align:center; }
+    .cta { display:inline-block; padding:10px 14px; border-radius:10px; background: var(--accent); color:#0b0c10; font-weight:700; }
+    .cta:hover { filter:brightness(0.95); text-decoration:none; }
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div><strong>Ayomide Adedeji</strong></div>
+        <div class="links">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="card">
+        <h1>Hi, I'm Ayomide Adedeji.</h1>
+        <p class="muted">Computer Science student in Saskatoon, SK. I build simple, accessible web experiences and learn by doing.</p>
+        <div class="badges">
+          <span class="badge">HTML</span>
+          <span class="badge">CSS</span>
+          <span class="badge">JavaScript</span>
+          <span class="badge">Customer Service</span>
+          <span class="badge">POS Systems</span>
+        </div>
+        <div style="margin-top:16px;">
+          <a class="cta" href="#contact">Get in touch</a>
+          <a style="margin-left:10px;" href="Ayomide_Resume_Polished.pdf" target="_blank" rel="noopener">📄 Download Resume</a>
+        </div>
+      </div>
+      <div class="card">
+        <h2>Quick Facts</h2>
+        <ul class="list">
+          <li>📍 Based in Saskatoon, SK</li>
+          <li>🎓 University of Saskatchewan — B.Sc. Computer Science (Expected 2027)</li>
+          <li>🧰 Comfortable with HTML, CSS, JavaScript</li>
+          <li>🔗 LinkedIn: <a href="https://www.linkedin.com/in/" target="_blank" rel="noopener">LinkedIn Profile</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p>I’m a motivated learner with customer-facing experience and a growing focus on web development. I enjoy turning ideas into usable interfaces and I’m currently expanding my skills while working in fast-paced retail environments.</p>
+    </section>
+
+    <section id="experience" class="section">
+      <h2>Experience</h2>
+      <div class="list">
+        <div class="item">
+          <div class="row">
+            <h3>Home Depot — Front End Associate &amp; Lot Associate</h3>
+            <span class="pill">Oct 2024 – Present • Saskatoon, SK</span>
+          </div>
+          <ul>
+            <li><strong>Front End:</strong> Delivered accurate checkout service; handled returns, exchanges, and product inquiries while supporting order pickups.</li>
+            <li><strong>Lot:</strong> Assisted with loading heavy/oversized items, lot organization, cart retrieval, and seasonal staging to improve safety and access.</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <div class="row">
+            <h3>McDonald’s — Crew Member</h3>
+            <span class="pill">Jul 2023 – Sep 2023 • Saskatoon, SK</span>
+          </div>
+          <ul>
+            <li>Served 100+ guests per shift in a high-volume environment.</li>
+            <li>Operated POS with 99% transaction accuracy and maintained food safety standards.</li>
+            <li>Collaborated to meet shift goals and keep service areas clean and ready.</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <div class="row">
+            <h3>Potters Planet — Technical Assistant (Volunteer)</h3>
+            <span class="pill">2018 – 2021 • Nigeria</span>
+          </div>
+          <ul>
+            <li>Set up and maintained live sound systems; cleaned and inspected equipment.</li>
+            <li>Assisted performers and coordinated technical setup for smooth event flow.</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <div class="row">
+            <h3>Shoprite — Sales Associate</h3>
+            <span class="pill">2018 – 2020 • Nigeria</span>
+          </div>
+          <ul>
+            <li>Assisted customers with product selection and inquiries; supported merchandising.</li>
+            <li>Operated registers and helped maintain organized displays and stock.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="list">
+        <div class="item">
+          <div class="row">
+            <h3>Personal Portfolio Website</h3>
+            <span class="pill"><a href="https://israelswebsite.netlify.app" target="_blank" rel="noopener">Visit ↗</a></span>
+          </div>
+          <p>Designed and deployed a responsive site using HTML, CSS, and JavaScript to showcase personal projects, with mobile‑first design and accessible navigation.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="badges">
+        <span class="badge">HTML</span>
+        <span class="badge">CSS</span>
+        <span class="badge">JavaScript</span>
+        <span class="badge">VS Code</span>
+        <span class="badge">Microsoft Word</span>
+        <span class="badge">Excel</span>
+        <span class="badge">PowerPoint</span>
+        <span class="badge">Customer Service</span>
+        <span class="badge">POS Operations</span>
+        <span class="badge">Teamwork</span>
+        <span class="badge">Time Management</span>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <div class="item">
+        <p><strong>Email:</strong> <a href="mailto:aadedeji507@gmail.com">aadedeji507@gmail.com</a></p>
+        <p><strong>Phone:</strong> (306) 261-1462</p>
+        <p><strong>Location:</strong> Saskatoon, SK</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container muted">© <span id="y"></span> Ayomide Adedeji. Built with HTML &amp; CSS.</div>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
